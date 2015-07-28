@@ -6,6 +6,62 @@ Currently only these scripts exists:
 
 * PBKDF2 test: https://jedie.github.io/WebCrypto-bench/PBKDF2/index.html
 
+== results
+
+some collected running results:
+
+=== PBKDF2 test
+
+All bench results are used the default data:
+* Test string: "a test string"
+* Test salt: "a test salt"
+* PBKDF2 bytes: 32
+
+only the "PBKDF2 iterations" are changed.
+
+
+**Firefox v38esr** - Windows 8.1 - Intel **i7-4790K**:
+{{{
+calculate PBKDF2...Generated PBKDF2 hash:b7e8df10cc21ff1ca55a032792b632d09a4b74a71d6284501f0f77c849b1b50f
+duration: 0.016sec for 1000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:708def111d20ff88702f5d17ed125c952790877add91e3b25277debcac0058d7
+duration: 0.03sec for 10000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:594b28f3bd8152cb577c58e62b09e02905e787c986d607c4a4006b3ed9d5ef14
+duration: 0.159sec for 100000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:d5eefdbededfab47b5e873aba6ebbe50ad02d10945a208d8bf5d4920db2a1d42
+duration: 1.429sec for 1000000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:480f73a27499f89a4eff8cda7964c9bbc5cbea954e9bc01db87cd3c50defe723
+duration: 14.081sec for 10000000 iterations.
+}}}
+
+**Chrome v44** - Windows 8.1 - Intel **i7-4790K**:
+{{{
+calculate PBKDF2...Generated PBKDF2 hash:b7e8df10cc21ff1ca55a032792b632d09a4b74a71d6284501f0f77c849b1b50f
+duration: 0.003sec for 1000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:708def111d20ff88702f5d17ed125c952790877add91e3b25277debcac0058d7
+duration: 0.018sec for 10000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:594b28f3bd8152cb577c58e62b09e02905e787c986d607c4a4006b3ed9d5ef14
+duration: 0.164sec for 100000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:d5eefdbededfab47b5e873aba6ebbe50ad02d10945a208d8bf5d4920db2a1d42
+duration: 1.572sec for 1000000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:480f73a27499f89a4eff8cda7964c9bbc5cbea954e9bc01db87cd3c50defe723
+duration: 15.701sec for 10000000 iterations.
+}}}
+
+
+**Firefox v39** - Ubuntu 14.04 - **[[http://docs.cubieboard.org/products/start#cubietruck_cubieboard3|Cubietruck (Cubieboard 3)]]**:
+{{{
+calculate PBKDF2...Generated PBKDF2 hash:b7e8df10cc21ff1ca55a032792b632d09a4b74a71d6284501f0f77c849b1b50f
+duration: 0.052sec for 1000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:708def111d20ff88702f5d17ed125c952790877add91e3b25277debcac0058d7
+duration: 0.207sec for 10000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:594b28f3bd8152cb577c58e62b09e02905e787c986d607c4a4006b3ed9d5ef14
+duration: 1.665sec for 100000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:d5eefdbededfab47b5e873aba6ebbe50ad02d10945a208d8bf5d4920db2a1d42
+duration: 16.668sec for 1000000 iterations.
+}}}
+
+
 
 == Links
 
