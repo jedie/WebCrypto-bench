@@ -4,7 +4,7 @@ Just some html/javascript ot test how fast are the Web Cryptography API.
 
 Currently only these scripts exists:
 
-* PBKDF2 test: https://jedie.github.io/WebCrypto-bench/PBKDF2/index.html
+* PBKDF2 test: https://jedie.github.io/WebCrypto-bench/PBKDF2/
 
 == results
 
