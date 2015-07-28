@@ -11,8 +11,6 @@ try {
 }
 
 function pbkdf2(txt, salt, iterations, bytes) {
-    if (typeof(bytes)==='undefined') bytes = PBKDF2_BYTE_LENGTH;
-
     log("pbkdf2 calc with iterations: " + iterations + " - bytes: " + bytes)
 
     // TODO: add work-a-round if TextEncoder not supported
