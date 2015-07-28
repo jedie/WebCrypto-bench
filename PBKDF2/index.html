@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <!--
+    Written by Jens Diemer
+    :license: GNU GPL v3 or above, see LICENSE for more details
+    :homepage: https://github.com/jedie/WebCrypto-bench
+    -->
+    <head>
+        <title>WebCryptoAPI benchmarks - PBKDF2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <link rel="stylesheet" type="text/css" href="../base_files/styles.css" />
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../base_files/base.js" onerror="JavaScript:alert('Error loading file ['+this.src+'] !');"></script>
+        <script type="text/javascript" src="pbkdf2.js" onerror="JavaScript:alert('Error loading file ['+this.src+'] !');"></script>
+    </head>
+    <body>
+        <h1>Web Cryptography API benchmarks - PBKDF2</h1>
+        <p>
+            You user agent is: <strong><script>document.write(navigator.userAgent);</script></strong>
+        </p>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th><label for="test_string">Test string:</label></th>
+                    <td><input id="test_string" name="test_string" type="text" value="a test string" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="test_salt">Test salt:</label></th>
+                    <td><input id="test_salt" name="test_salt" type="text" value="a test salt" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="iterations">PBKDF2 iterations:</label></th>
+                    <td><input id="iterations" name="iterations" type="number" min="1" value="1000"></td>
+                </tr>
+                <tr>
+                    <th><label for="bytes">PBKDF2 bytes:</label></th>
+                    <td><input id="bytes" name="bytes" type="number" min="1" value="32"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="calculate PBKDF2"/></td>
+                </tr>
+            </table>
+        </form>
+        <noscript>
+            <h2>Please enable JavaScript!</h2>
+        </noscript>
+        <pre id="output"></pre>
+    </body>
+</html>
+

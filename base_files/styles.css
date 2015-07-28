@@ -1,0 +1,12 @@
+button {
+    display:none;
+}
+pre, textarea {
+    width: 90%;
+    height: 35%;
+    margin: 1em;
+    padding: 1em;
+}
+pre {
+    border: 5px solid #ddd;
+}
