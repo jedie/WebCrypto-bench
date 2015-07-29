@@ -5,6 +5,7 @@ Just some html/javascript ot test how fast are the Web Cryptography API.
 Currently only these scripts exists:
 
 * PBKDF2 test: https://jedie.github.io/WebCrypto-bench/PBKDF2/
+* SHA test: https://jedie.github.io/WebCrypto-bench/SHA/
 
 (All code are released under GNU GPL v3 or above, see LICENSE for more details)
 

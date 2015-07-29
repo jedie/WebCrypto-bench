@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <!--
+    Written by Jens Diemer
+    :license: GNU GPL v3 or above, see LICENSE for more details
+    :homepage: https://github.com/jedie/WebCrypto-bench
+    -->
+    <head>
+        <title>WebCryptoAPI benchmarks - PBKDF2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <link rel="stylesheet" type="text/css" href="../base_files/styles.css" />
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../base_files/base.js" onerror="JavaScript:alert('Error loading file ['+this.src+'] !');"></script>
+        <script type="text/javascript" src="sha.js" onerror="JavaScript:alert('Error loading file ['+this.src+'] !');"></script>
+    </head>
+    <body>
+        <h1>Web Cryptography API benchmarks - SHA</h1>
+        <a href="https://github.com/jedie/WebCrypto-bench"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+        <p>
+            You user agent is: <strong><script>document.write(navigator.userAgent);</script></strong>
+        </p>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th><label for="test_string">Test string:</label></th>
+                    <td><input id="test_string" name="test_string" type="text" value="a test string" required /></td>
+                </tr>
+                <tr><th>type:</th>
+                    <td>
+                        <input type="radio" name="sha_type" value="SHA-1" checked>SHA-1<br />
+                        <input type="radio" name="sha_type" value="SHA-256">SHA-256<br />
+                        <input type="radio" name="sha_type" value="SHA-384">SHA-384<br />
+                        <input type="radio" name="sha_type" value="SHA-512">SHA-512
+                    </td>
+                <tr>
+                    <th><label for="iterations">iterations:</label></th>
+                    <td><input id="iterations" name="iterations" type="number" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="calculate SHA"/></td>
+                </tr>
+            </table>
+        </form>
+        <noscript>
+            <h2>Please enable JavaScript!</h2>
+        </noscript>
+        <pre id="output"></pre>
+        <!--
+        <p>
+            Want to run this test on your smartphone/tables? Scan the URL here:<br/>
+            <img src="qr-code-pbkdf2_test.png">
+        </p>
+        -->
+        <p>
+            all sources licensed under GNU GPL v3 or above: <a href="https://github.com/jedie/WebCrypto-bench">github.com/jedie/WebCrypto-bench</a>
+        </p>
+    </body>
+</html>
+

@@ -70,23 +70,25 @@ $(document).ready(function() {
     test_pbkdf2_js();
 
     $("form").submit(function() {
-        window.stdout("calculate PBKDF2...");
+        var txt = $("#test_string").val();
+        var salt = $("#test_salt").val();
+        var iterations = parseInt($("#iterations").val());
+        var bytes = parseInt($("#bytes").val());
+
+        window.stdout("calculate PBKDF2 with "+iterations+" iterations: ");
 
         var start_time = new Date();
-        var iterations = parseInt($("#iterations").val())
         pbkdf2(
-            txt=$("#test_string").val(),
-            salt=$("#test_salt").val(),
-            iterations=iterations,
-            bytes=parseInt($("#bytes").val())
+            txt, salt,
+            iterations, bytes
         ).then(function(hex_hash){
             var duration = new Date() - start_time;
-            window.stdout("Generated PBKDF2 hash:"+hex_hash+"\n");
-            window.stdout("duration: " + duration/1000+"sec for "+iterations+" iterations.\n");
+            window.stdout("duration: " + duration/1000 + " sec.\n");
+            window.stdout("PBKDF2 hash: " + hex_hash + "\n");
         }).catch(function(err){
             low_level_error("Error running PBKDF2 test:" + err);
         });
 
-        return false;
+        return false; // don't submit form
     });
 });
