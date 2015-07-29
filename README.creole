@@ -83,6 +83,20 @@ calculate PBKDF2...Generated PBKDF2 hash:d5eefdbededfab47b5e873aba6ebbe50ad02d10
 duration: 7.567sec for 1000000 iterations.
 }}}
 
+==== tablets
+
+**Galaxy Tab 2 10.1** (GT-P5110) - **Firefox v39** - Android 4.4.4 (CyanogenMod 11)
+{{{
+calculate PBKDF2...Generated PBKDF2 hash:b7e8df10cc21ff1ca55a032792b632d09a4b74a71d6284501f0f77c849b1b50f
+duration: 0.117sec for 1000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:708def111d20ff88702f5d17ed125c952790877add91e3b25277debcac0058d7
+duration: 0.361sec for 10000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:594b28f3bd8152cb577c58e62b09e02905e787c986d607c4a4006b3ed9d5ef14
+duration: 1.456sec for 100000 iterations.
+calculate PBKDF2...Generated PBKDF2 hash:d5eefdbededfab47b5e873aba6ebbe50ad02d10945a208d8bf5d4920db2a1d42
+duration: 12.096sec for 1000000 iterations.
+}}}
+
 
 == Links
 
