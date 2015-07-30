@@ -65,10 +65,12 @@ function test_SHA_js() {
 
 $(document).ready(function() {
     init_out();
-    window.stdout("Check WebCrypto API...");
-    check_webcrypto();
-
-    test_SHA_js();
+    try {
+        check_webcrypto();
+        test_SHA_js();
+    } catch (e) {
+        low_level_error("Error:" + e);
+    }
 
     $("form").submit(function() {
     	sha_type = $("input:radio[name=sha_type]:checked").val();

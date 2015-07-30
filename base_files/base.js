@@ -56,6 +56,8 @@ function init_out() {
 }
 
 function check_webcrypto() {
+    window.stdout("Check WebCrypto API: ");
+
     // IE11 has window.msCrypto but doesn't provide promise .then() / .catch()
     // it used the outdated .oncomplete() and .onerror()
     if (!window.crypto) {

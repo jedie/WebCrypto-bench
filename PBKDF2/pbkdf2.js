@@ -64,10 +64,12 @@ function test_pbkdf2_js() {
 
 $(document).ready(function() {
     init_out();
-    window.stdout("Check WebCrypto API...");
-    check_webcrypto();
-
-    test_pbkdf2_js();
+    try {
+        check_webcrypto();
+        test_pbkdf2_js();
+    } catch (e) {
+        low_level_error("Error:" + e);
+    }
 
     $("form").submit(function() {
         var txt = $("#test_string").val();
