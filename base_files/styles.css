@@ -10,3 +10,6 @@ pre, textarea {
 pre {
     border: 5px solid #ddd;
 }
+noscript * {
+    color: #ff0000;
+}
